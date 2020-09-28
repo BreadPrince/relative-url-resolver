@@ -1,6 +1,6 @@
 {
   "name": "relative-url-resolver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Resolve relative url to absolute url via given base url.",
   "main": "index.js",
   "scripts": {
