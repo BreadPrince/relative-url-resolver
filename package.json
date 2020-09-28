@@ -1,0 +1,32 @@
+{
+  "name": "relative-url-resolver",
+  "version": "1.0.0",
+  "description": "Resolve relative url to absolute url via given base url.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BreadPrince/relative-url-resolver.git"
+  },
+  "keywords": [
+    "url",
+    "relative url",
+    "absolute url",
+    "url resolver"
+  ],
+  "author": "Yan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BreadPrince/relative-url-resolver/issues"
+  },
+  "homepage": "https://github.com/BreadPrince/relative-url-resolver#readme",
+  "devDependencies": {
+    "eslint": "^7.9.0"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3"
+  }
+}
