@@ -90,10 +90,10 @@ function resolve(rel, base) {
     base = typeof base === 'string' ? base.trim() : base;
 
     // If the base URL is the empty string (unknown), the embedded URL is interpreted as an absolute URL and we are done.
-    if (!base || typeof base !== 'string') return rel;
+    if (!base || typeof base !== 'string') return rel || '';
 
     // If the embedded URL is entirely empty, it inherits the entire base URL (i.e., is set equal to the base URL) and we are done.
-    if (!rel || typeof rel !== 'string') return base;
+    if (!rel || typeof rel !== 'string') return base || '';
 
     const relComp = parseUrl(rel);
 
