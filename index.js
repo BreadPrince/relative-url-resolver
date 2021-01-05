@@ -86,8 +86,8 @@ function loadComponentsToUrl(components) {
  * @param {string} base base url
  */
 function resolve(rel, base) {
-    rel = rel.trim();
-    base = base.trim();
+    rel = typeof rel === 'string' ? rel.trim() : rel;
+    base = typeof base === 'string' ? base.trim() : base;
 
     // If the base URL is the empty string (unknown), the embedded URL is interpreted as an absolute URL and we are done.
     if (!base || typeof base !== 'string') return rel;
