@@ -89,6 +89,21 @@ describe(`Custom test cases`, () => {
             "  http://www.baidu.com?query#hash    ",
             "http://www.baidu.com/path?query#hash"
         ),
+        new CaseUnit(
+            "http://baidu.com/",
+            undefined,
+            "http://baidu.com/"
+        ),
+        new CaseUnit(
+            undefined,
+            "http://baidu.com/",
+            "http://baidu.com/"
+        ),
+        new CaseUnit(
+            undefined,
+            undefined,
+            ""
+        )
     ];
 
     testCases.forEach((unit) => {
